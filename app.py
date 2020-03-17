@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+ROOM_SIZE_X = 15
+ROOM_SIZE_Y = 10
 
 @app.route('/input', methods=["POST"])
 def input():
